@@ -216,3 +216,59 @@ aside article ul li a {
 .whatWeDo button {
     margin-top: 30px;
 }
+/****** Pitanje 1. Zasto nisam mogla u .col background: rgba? ******/
+/****** Pitanje 2. Zasto nisam mogla objedinjeno pravilo bordera za svako dete .col ******/
+
+/****** Contact ******/
+.contact {
+    background: var(--fifthBg);
+    color: white;
+    padding: 60px 7.5%;
+}
+.contact h2 {
+    font-size: 2.5rem;
+}
+.contact p {
+    font-size: 1rem;
+}
+.contact article {
+    display: flex;
+}
+.contact article div:first-child {
+    flex: 0 0 68%;
+}
+.contact article div:first-child form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-right: 20px;
+}
+.contact article div:first-child form input {
+    flex: 0 0 48%;
+    background: var(--navColor);
+    padding: 20px;
+    border: none;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+.contact article div:first-child form textarea {
+    flex: 0 0 100%;
+    background: var(--navColor);
+    padding: 20px;
+    border: none;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+.contact article div:last-child {
+    flex: 0 0 28%;
+    border-left: 1px solid var(--borderLightGray);
+    padding-left: 25px;
+}
+.contact article div:last-child h5 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+.contact article div:last-child p {
+    font-size: 1.2rem;
+    padding-bottom: 20px;
+}
