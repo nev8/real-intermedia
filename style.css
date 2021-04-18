@@ -5,7 +5,7 @@
     --firstBg: rgb(80, 82, 181);
     --secondBg: #4c4eac;
     --thirdBg: #484aa3;
-    --fourthBg: #b74e91;
+    --fourthBg: rgb(183, 78, 145);
     --fifthBg: #5e42a6;
     --footerBg: #493382;
     --white: #fff;
@@ -149,5 +149,70 @@ aside article ul li a {
    padding-bottom: 20px;
 }
 
-
-
+/****** WhatWeDo ******/
+.whatWeDo {
+    background: var(--fourthBg);
+    padding: 60px 7.5%;
+    color: white;
+}
+.whatWeDo h2 {
+    font-size: 2.5rem;
+}
+.whatWeDo p {
+    font-size: 1rem;
+}
+.whatWeDo article {
+    display: flex;
+    flex-wrap: wrap;
+    background: rgb(180, 120, 158);
+}
+.whatWeDo article .col {
+    flex: 0 0 50%;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    padding-top: 100px;
+    border: 2px solid var(--borderLightGray);
+    /* background: rgba(183, 78, 145, .7); */
+}
+.whatWeDo article .col:first-child {
+    border-bottom: 1px solid var(--borderLightGray);
+    border-right: 1px solid var(--borderLightGray);
+}
+.whatWeDo article .col:nth-child(2) {
+    border-left: 1px solid var(--borderLightGray);
+    border-bottom: 1px solid var(--borderLightGray);
+}
+.whatWeDo article .col:nth-child(3) {
+    border-right: 1px solid var(--borderLightGray);
+    border-top: 1px solid var(--borderLightGray);
+}
+.whatWeDo article .col:last-child {
+    border-top: 1px solid var(--borderLightGray);
+    border-left: 1px solid var(--borderLightGray);
+}
+.whatWeDo article .col div:first-child {
+    flex: 0 0 18%;
+    background: white;
+    height: 65px;
+    width: 30px;
+    color: var(--fourthBg);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+}
+.whatWeDo article .col div:last-child {
+    flex: 0 0 70%;
+}
+.whatWeDo article .col div:last-child h4 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+.whatWeDo article .col div:last-child p {
+    font-size: 1.2rem;
+}
+.whatWeDo button {
+    margin-top: 30px;
+}
