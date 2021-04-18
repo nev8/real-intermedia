@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Barlow:400,700,900|Lato:300,400,700&display=swap');
 :root {
-    --primaryViolet: #5e42a6;
+    --primaryViolet: rgb(94, 66, 166);
     --navColor: #312450;
-    --firstBg: #5052b5;
+    --firstBg: rgb(80, 82, 181);
     --secondBg: #4c4eac;
     --thirdBg: #484aa3;
     --fourthBg: #b74e91;
@@ -75,8 +75,38 @@ aside article ul li a {
 }
 
 
-
+/****** Welcome ******/
 main {
     flex: 0 0 70%;
     overflow: scroll;
+}
+.welcome {
+    background: linear-gradient(rgb(94, 66, 166, .9), rgb(94, 66, 166, .9)), url(img/circle.png);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    padding-left: 7.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.welcome h1 {
+    color: white;
+    font-size: 5rem;
+    padding-bottom: 40px;
+}
+.welcome p {
+    color: var(--lightGray);
+    font-size: 1.4rem;
+    padding-bottom: 40px;
+}
+.welcome button {
+    color: white;
+    background: transparent;
+    border: .5px solid var(--borderLightGray);
+    border-radius: 30px;
+    padding: 20px 45px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
