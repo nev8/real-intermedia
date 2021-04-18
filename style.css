@@ -31,6 +31,24 @@ h1,h2,h3, h4 {
 ul {
     list-style-type: none;
 }
+button {
+    color: white;
+    background: transparent;
+    border: .5px solid var(--borderLightGray);
+    border-radius: 30px;
+    padding: 20px 45px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+p {
+    color: var(--lightGray);
+    font-size: 1.4rem;
+    padding-bottom: 40px;
+}
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
 
 /****** AsideNav ******/
 aside {
@@ -76,9 +94,10 @@ aside article ul li a {
 
 
 /****** Welcome ******/
-main {
+.main {
     flex: 0 0 70%;
     overflow: scroll;
+    height: 100vh; /*ovde pazi da ne zaboravis sledeci put*/
 }
 .welcome {
     background: linear-gradient(rgb(94, 66, 166, .9), rgb(94, 66, 166, .9)), url(img/circle.png);
@@ -96,17 +115,39 @@ main {
     font-size: 5rem;
     padding-bottom: 40px;
 }
-.welcome p {
-    color: var(--lightGray);
-    font-size: 1.4rem;
-    padding-bottom: 40px;
+
+/****** WhoWeAre ******/
+.whoWeAre article {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
-.welcome button {
+.whoWeAre article div:first-child {
+    flex: 0 0 30%;
+}
+.whoWeAre article div:last-child {
+    flex: 0 0 70%;
     color: white;
-    background: transparent;
-    border: .5px solid var(--borderLightGray);
-    border-radius: 30px;
-    padding: 20px 45px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+    margin: auto;
+    padding-left: 75px;
 }
+.whoWeAre article div img {
+    width: 100%;
+    display: block;
+}
+.whoWeAre article:first-child {
+    background: var(--firstBg);
+}
+.whoWeAre article:nth-child(2) {
+    background: var(--secondBg);
+}
+.whoWeAre article:last-child {
+    background: var(--thirdBg);
+}
+.whoWeAre article div:last-child p{
+   font-size: 1rem;
+   padding-bottom: 20px;
+}
+
+
+
