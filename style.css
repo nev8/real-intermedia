@@ -28,10 +28,54 @@ body {
 h1,h2,h3, h4 {
     font-family: 'Barlow', sans-serif;
 }
+ul {
+    list-style-type: none;
+}
 
+/****** AsideNav ******/
 aside {
     flex: 0 0 30%;
+    background: var(--navColor);
+    height: 100vh;
 }
+aside article {
+    padding: 100px 10px;
+}
+aside img {
+    width: 70%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 25px;
+}
+aside article ul {
+    width: 70%;
+    margin: auto;
+}
+aside article ul li a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding-top: 30px;
+    border-bottom: 1px solid var(--borderLightGray);
+    display: block;
+    text-align: right;
+}
+.icons {
+    width: 70%;
+    margin: auto;
+    margin-top: 50px;
+    text-align: right;
+}
+.icons a {
+    color: white;
+    font-size: 2rem;
+    margin-left: 20px;
+}
+
+
+
 main {
     flex: 0 0 70%;
     overflow: scroll;
